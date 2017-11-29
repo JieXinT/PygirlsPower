@@ -24,5 +24,5 @@ if 'PORT' in os.environ:
 	# app running on Heroku
 	app.run(host="0.0.0.0", port=int(os.environ["PORT"]))
 else:
-	# app running locally (i.e you can see it by)
-app.run(debug=True)
+	# app running locally (i.e you can see it by typing 'localhost:5000' in browser)
+	app.run(debug=True)
