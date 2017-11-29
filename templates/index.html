@@ -1,0 +1,17 @@
+{% include "header.html" %}
+
+  <!-- ... and this is how to include our own CSS, which NEEDS to be stored under the "static" folder -->
+  <link rel="stylesheet" href={{url_for( "static", filename="css/app.css" )}}>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div id="message" class="col-xs-12">
+        Hello from a basic app with some styling! Phew!
+      </div>
+    </div>
+
+    {% include "footer.html" %}
+  </div>
+</body>
+</html>
