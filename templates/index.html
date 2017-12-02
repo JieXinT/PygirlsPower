@@ -1,17 +1,100 @@
-{% include "header.html" %}
+<!DOCTYPE html>
 
-  <!-- ... and this is how to include our own CSS, which NEEDS to be stored under the "static" folder -->
-  <link rel="stylesheet" href={{url_for( "static", filename="css/app.css" )}}>
+<html>
+
+<head>
+		<!--link to bootstrap-->
+		<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel='stylesheet'>
+		<!--link to stylesheet-->
+		<link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='css/stylesheet.css') }}">
+    <!--link to jquery-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src"ourscript.js"></script>
+                    <script src="static/js/bootstrap.min.js"></script>  
+		<!--Title on tab bar-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello</title>
 </head>
-<body>
-  <div class="container">
-    <div class="row">
-      <div id="message" class="col-xs-12">
-        Hello from a basic app with some styling! Phew!
-      </div>
-    </div>
 
-    {% include "footer.html" %}
-  </div>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#page1">Page 1</a></li>
+			<li><a href="#page2">Page 2</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<!--Parallax scrolling-->
+<div class= "parallax">
+
+
+<!--header-->
+<div class="header">
+  <h1 class="text-center"><strong>Pygirls Power</strong>
+  </h1>
+</div>
+</div>
+
+<!--Content-->
+
+  <!-- Section -->
+          <section class="container">
+            <div class="inner">
+              <!-- 2 Columns -->
+                  <div class="col col2">
+                    <h2 class="text-center"> About Me </h2> 
+                    <p>Etiam posuere hendrerit arcu, ac blandit nulla. Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex.</p>
+                    <p>Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex. </p>
+                    <a href="#" class="button">Learn More</a>
+                  </div>
+                </div>
+            </div>
+          </section>
+
+            <!-- Section -->
+          <section class="container">
+            <div id="container">
+              
+                  <h3>Suspendisse quis massa vel justo</h3>
+                  <p>Etiam posuere hendrerit arcu, ac blandit nulla. Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex.</p>
+                  <p>Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex. </p>
+                  <a href="#" class="button">Learn More</a>
+                </div>
+                <div class="col col1 first">
+                  <div class="image round fit">
+                    <a href="generic.html" class="link"><img src="images/pic02.jpg" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+         
+
+
+
+
+
+
+
+   
+
+
 </body>
 </html>
