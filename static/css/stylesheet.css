@@ -22,15 +22,13 @@
 }
 
 .inner2{
-  background-color: black;
+  background-color: lightgrey;
 }
 
 /*Parallax scrolling*/
     .parallax { 
-
   /* The image used */
-    background-image:url ("gavel.jpg");
-
+    background-image: url("static/gavel.jpg");
     /* Height */
     height: 500px; 
 
