@@ -6,7 +6,7 @@
 		<!--link to bootstrap-->
 		<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel='stylesheet'>
 		<!--link to stylesheet-->
-		<link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='css/stylesheet.css') }}">
+		<link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='css/stylesheet.css') }}">
     <!--link to jquery-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src"ourscript.js"></script>
@@ -56,11 +56,12 @@
     <h2 class="text-center"> #LegalTech: </h2>
       <br>
       <br>
-        <div class="container" >
+      <center>
+        <div class="container1" >
           <div class="row" >
             {% for tweet in tweets %}
           <div class="col-lg-3 col-sm-3" >
-            <img src=" {{ tweet.user.profile_image_url }} " class="img-rounded"> <br> <h3>{{ tweet.user.screen_name }}</h3> <br>
+            <img src=" {{ tweet.user.profile_image_url }} " class="img-responsive"> <br> <h3>{{ tweet.user.screen_name }}</h3> <br>
           </div>
           <div class="col-lg-8 col-sm-9" >
             <p>{{ tweet.text }}</p>
@@ -68,9 +69,10 @@
           {% endfor %}
           </div>
             <center>
-            <a href="https://twitter.com/search?q=%23shefcodefirst&src=savs" class="twi-button">Read more </a>
+            <a href="https://twitter.com/search?q=%23LegalTech&src=tyah" class="twi-button">Read more </a>
             </center>
             </div>
+        </center>
       <br><br>
 
   <!--Twitter List-->
@@ -115,14 +117,14 @@
   <div class="container text-center">
   <div class='row'>
   <div class="col-md-12">
-  <div id="buzz">
+  <div id="team">
     <h2> The Team <br/> <small> Who are we? </small></h2>
     </div>
     </div>
 
     <div>
         <div class="col-md-4">
-          <img src="static/jx.jpg" class="img-circle" style="width:100%">
+          <img src="static/jx.jpg" class="img-responsive">
           <blockquote>
             <p>Final year law student, part time couch potato</p>
            <small>Jie Xin</small>
@@ -132,7 +134,7 @@
 
     <div>
         <div class="col-md-4">
-          <img src="static/hope.jpg" class="img-circle" style="width:100%" >
+          <img src="static/hope.jpg" class="img-responsive" >
           <blockquote>
             <p>Third year student in sociology and social policy</p>
             <small>Hope</small>
@@ -143,7 +145,7 @@
     <div>
       <div class='row'>
         <div class="col-md-4">
-          <img src="static/maureen.jpg" class="img-circle" style="width:100%">
+          <img src="static/maureen.jpg" class="img-responsive">
           <blockquote>
         <p> Student </p>
         <small>Maureen</small>
@@ -153,13 +155,14 @@
   
 
     <!--Social media buttons-->
-    <div id='social-buttons'>
-      <button class='btn btn-lg'>Twitter</button>
-      <button class='btn btn-lg'>Facebook</button>
-      <button class='btn btn-lg'>Pinterest</button>
-      </div>
-    </div>
-  </div>
+    <!-- icon library -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+          <!-- Buttons -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+
 
 
 
