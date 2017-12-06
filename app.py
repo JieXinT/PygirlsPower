@@ -1,24 +1,24 @@
+import tweepy
 import os
 
-from flask import Flask, render_template
+auth = tweepy.OAuthHandler('LbUo13xcIfdIYvoEHCEgL921K', 'GVReG2W4mM0ehxVHzqR0HWZ8T52QXWBLXAou9PR1Blf8Dn821c')
+auth.set_access_token ('92941839-FN3Z38BYlE9kYdqTaGEJXrTMjtgrkUcHk6JBqkyrA', 'XdbWbtcLiZiHTCVaYrax53fcOOgqUjC7rIMumkZe410k2')
 
+twitter_api = tweepy.API(auth)
+
+women_tweets = twitter_api.search(q="WomenInSTEM") #twitter handle searched for
+
+for tweet in women_tweets:
+	print (tweet.user.name +": "+ tweet.text +"\n")
+
+
+from flask import Flask, render_template
 app = Flask("demoApp")
 
 @app.route("/")
-def say_hello():
-	return "Hello Code First Girls people!"
+def index():
+	return render_template("index.html", tweets=public_tweets)
 
-@app.route("/<name>")
-def say_hello_to(name):
-	return f"Hello {name}"
-
-@app.route("/hello/<name>")
-def say_hello_the_old_way_with_name(name):
-	return render_template("index.html", name=name)
-
-@app.route("/another")
-def show_another_template():
-	return render_template("another.html")
 
 if 'PORT' in os.environ:
 	# app running on Heroku
