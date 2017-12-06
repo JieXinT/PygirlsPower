@@ -16,7 +16,14 @@
   background-color: rgba(0,0,0, .5);
 }
 
+/*Content*/
+.inner {
+  background-color: red;  
+}
 
+.inner2{
+  background-color: black;
+}
 
 /*Parallax scrolling*/
     .parallax { 
@@ -37,13 +44,6 @@
    @media only screen and (max-device-width: 1024px) {
     .parallax {
         background-attachment: scroll;
-    }
-
- /*Content*/
-.container {
-  background-color: #efefef;
-  color: red;
-  
-}
+    } 
 
 
