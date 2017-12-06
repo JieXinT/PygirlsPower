@@ -8,16 +8,12 @@ twitter_api = tweepy.API(auth)
 
 women_tweets = twitter_api.search(q="WomenInSTEM") #twitter handle searched for
 
-for tweet in women_tweets:
-	print (tweet.user.name +": "+ tweet.text +"\n")
-
-
 from flask import Flask, render_template
 app = Flask("demoApp")
 
 @app.route("/")
 def index():
-	return render_template("index.html", tweets=public_tweets)
+	return render_template("index.html", tweets=women_tweets)
 
 
 if 'PORT' in os.environ:
