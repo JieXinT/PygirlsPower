@@ -13,7 +13,7 @@
                     <script src="static/js/bootstrap.min.js"></script>  
 		<!--Title on tab bar-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello</title>
+  <title>About Us</title>
 </head>
 
 <body>
@@ -46,40 +46,20 @@
 
 <!--header-->
 <div class="header">
-  <h1 class="text-center"><strong>Legal Tech</strong>
+  <h1 class="text-center"><strong>About Us</strong>
   </h1>
 </div>
 </div>
 
 <!--Content-->
-  <!--Tweets-->
-    <h2> #LegalTech: </h2>
-      <br>
-      <br>
-        <div class="container" >
-          <div class="row" >
-            {% for tweet in tweets %}
-          <div class="col-lg-3 col-sm-3" >
-            <img src=" {{ tweet.user.profile_image_url }} " class="img-rounded"> <br> <h3>{{ tweet.user.screen_name }}</h3> <br>
-          </div>
-          <div class="col-lg-8 col-sm-9" >
-            <p>{{ tweet.text }}</p>
-          </div>
-          {% endfor %}
-          </div>
-            <center>
-            <a href="https://twitter.com/search?q=%23shefcodefirst&src=savs" class="twi-button">Read more </a>
-            </center>
-            </div>
-      <br><br>
 
   <!-- Section -->
           <section class="container">
             <div class="inner">
               <!-- 2 Columns -->
                   <div class="col col2">
-                    <h2 class="text-center"> About the site </h2> 
-                    <p>This site aims to collet #legaltech tweets. </p>
+                    <h2 class="text-center"> About Me </h2> 
+                    <p>Etiam posuere hendrerit arcu, ac blandit nulla. Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex.</p>
                     <p>Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex. </p>
                     <a href="#" class="button">Learn More</a>
                   </div>

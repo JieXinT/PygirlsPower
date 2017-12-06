@@ -18,7 +18,7 @@
 
 /*Content*/
 .inner {
-  background-color: red;  
+  background-color: maroon;  
 }
 
 .inner2{
@@ -28,7 +28,7 @@
 /*Parallax scrolling*/
     .parallax { 
     /* The image used */
-    background-image: url("snowman.jpg");
+    background-image:url("gavel.jpg");
 
     /* Height */
     height: 500px; 

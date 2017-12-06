@@ -6,14 +6,14 @@ auth.set_access_token ('92941839-FN3Z38BYlE9kYdqTaGEJXrTMjtgrkUcHk6JBqkyrA', 'Xd
 
 twitter_api = tweepy.API(auth)
 
-women_tweets = twitter_api.search(q="WomenInSTEM") #twitter handle searched for
+legaltech_tweets = twitter_api.search(q="LegalTech") #twitter handle searched for
 
 from flask import Flask, render_template
 app = Flask("demoApp")
 
 @app.route("/")
 def index():
-	return render_template("index.html", tweets=women_tweets)
+	return render_template("index.html", tweets=legaltech_tweets)
 
 
 if 'PORT' in os.environ:
