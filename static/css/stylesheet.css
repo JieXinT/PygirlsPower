@@ -18,8 +18,10 @@
 
 /*Parallax scrolling*/
     .parallax { 
+
   /* The image used */
-    background-image: url("static/gavel.jpg");
+    background-image: url("gavel.jpg");
+
     /* Height */
     height: 500px; 
 
@@ -38,10 +40,6 @@
     } 
 
 /*Content*/
-.container1 {
-  background-color: lightcoral;
-
-}
 
 /*lower containers*/
 
