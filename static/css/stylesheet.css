@@ -18,7 +18,7 @@
 
 /*Content*/
 .inner {
-  background-color: maroon;  
+  background-color: lightcoral;  
 }
 
 .inner2{
@@ -27,11 +27,13 @@
 
 /*Parallax scrolling*/
     .parallax { 
-    /* The image used */
-    background-image:url("gavel.jpg");
+
+  /* The image used */
+    background-image:url ("gavel.jpg");
 
     /* Height */
     height: 500px; 
+
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;

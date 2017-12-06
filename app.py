@@ -6,7 +6,7 @@ auth.set_access_token ('92941839-FN3Z38BYlE9kYdqTaGEJXrTMjtgrkUcHk6JBqkyrA', 'Xd
 
 twitter_api = tweepy.API(auth)
 
-legaltech_tweets = twitter_api.search(q="LegalTech") #twitter handle searched for
+legaltech_tweets = twitter_api.search(q="#LegalTech") #twitter handle searched for
 
 from flask import Flask, render_template
 app = Flask("demoApp")
